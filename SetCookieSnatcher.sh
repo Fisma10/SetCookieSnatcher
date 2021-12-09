@@ -1,3 +1,6 @@
+# I'm sure this code looks like it's escaped a SCP lab. But I just quickly threw it up for a project, and might change later if I am willing to go through the horrors of bash scripting again
+
+# Basically a help page
 if [ -z $1 ] || [ -z $2 ] || [ -z $3 ]
  then
  echo "[Insert good ascii art by someone with talent]"
@@ -6,6 +9,7 @@ if [ -z $1 ] || [ -z $2 ] || [ -z $3 ]
  exit
 fi
 
+# Get the parameters in a horribly inefficient and ugly way
 Nap=0
 Cookies=
 Post=
@@ -70,6 +74,7 @@ if [ -n $6 ]
  fi
 fi
 
+# Essentially just use curl and grep the results that you want. But with just a few bells and whistles that in all honestly just save a few key presses
 Len=$3
 i=0
 while [[ i -le $Len ]]
